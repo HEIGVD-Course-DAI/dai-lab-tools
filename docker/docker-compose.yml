@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  chucknorris:
+    image: heigvddai/chucknorris
+    ports:
+      - "8080:80"
+
+  web:
+      image: nginx
+      ports:
+      - "80:80"
