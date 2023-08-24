@@ -1,7 +1,6 @@
 DAI Lab 1: Tools
 ================
 
-------------------------------------------------------------------------------
 Goals
 ------------------------------------------------------------------------------
 
@@ -22,7 +21,6 @@ The goal of this lab is to learn the tools we will use during the course:
   - Run a Java application from the command line
 
 
-------------------------------------------------------------------------------
 Preparation
 ------------------------------------------------------------------------------
 
@@ -35,7 +33,6 @@ git clone <urL of the repository>
 ```
 
 
-------------------------------------------------------------------------------
 Docker
 ------------------------------------------------------------------------------
 
@@ -77,7 +74,6 @@ A docker image may contain a server which uses a specific port (e.g., port 80). 
 Try different ports and connect to the container using your browser with the URL `http://localhost:<port>`.
 
 
-------------------------------------------------------------------------------
 Docker Compose
 ------------------------------------------------------------------------------
 
@@ -105,7 +101,6 @@ services:
         - "80:80"
 ```
 
-------------------------------------------------------------------------------
 Java
 ------------------------------------------------------------------------------
 
@@ -221,7 +216,6 @@ Unfortunately, java will complain with an error message: `no main manifest attri
 After this change, run `mvn clean package` again and try to run the `.jar` file with `java -jar target/demo-app-1.0.jar`. It should work now.
 
 
-------------------------------------------------------------------------------
 Creating a dockerized Java application
 ------------------------------------------------------------------------------
 
