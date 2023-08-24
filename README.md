@@ -127,11 +127,13 @@ As IDE, you can use:
 * IntelliJ IDEA Community Edition, which is free. Download it from https://www.jetbrains.com/idea/download/ and install it.
 * VS Code, which is also free. Download it from https://code.visualstudio.com/download and install it. Then install the Java Extension Pack from https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack.
 
-### The demo app
+#### The demo app
 
 This repository contains a simple Java project under the directory `./java/demo-app`. Open it in your IDE and try to run it. You should see "Hello world!" in the console output.
 
-#### Maven
+
+Maven
+------------------------------------------------------------------------------
 
 Maven is a build tool for Java. It is used to compile, test and package Java projects. It also manages dependencies between libraries.
 
