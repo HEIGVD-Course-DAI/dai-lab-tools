@@ -205,6 +205,7 @@ Unfortunately, java will complain with an error message: `no main manifest attri
         <plugins>
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <manifest>
