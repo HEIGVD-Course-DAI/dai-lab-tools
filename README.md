@@ -101,10 +101,26 @@ services:
         - "80:80"
 ```
 
+In the same directory, run the command:
+
+```bash
+docker compose up -d
+```
+
+to start the infrastructure. The option `-d` tells Docker Compose to run the containers in the background.
+
+Check that the containers are running with the command `docker compose ps`. You should see two containers, one for the chucknorris image and one for the nginx image.
+
+Then go to your browser and open http://localhost to access the nginx server. Open http://localhost:8080 to access the chucknorris server. It should show a Chuck Norris joke on each refresh.
+
+Shut down the infrastructure with the command 
+
+```bash
+docker compose down
+```
+
 Java
 ------------------------------------------------------------------------------
-
-This course uses Java for all labs.
 
 ### Java SDK installation
 
@@ -266,4 +282,4 @@ Now try to run the image with the normal `docker run` command that you already k
 
 ### Using Docker Compose
 
-In a final step, we will use Docker Compose to run the application. Create a `docker-compose.yml` file with the image as the only service. Run it with `doccker compose` to check that it works.
+In a final step, we will use Docker Compose to run the application. Create a `docker-compose.yml` file with the image as the only service. Run it with `docker compose` to check that it works.
