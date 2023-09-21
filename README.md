@@ -95,10 +95,10 @@ services:
     ports:
       - "8080:80"
 
-    web:
-      image: nginx
-      ports:
-        - "80:80"
+  web:
+    image: nginx
+    ports:
+      - "80:80"
 ```
 
 In the same directory, run the command:
