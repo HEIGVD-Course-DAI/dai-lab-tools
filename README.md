@@ -57,7 +57,7 @@ We've provided a custom docker image `heigvddai/chucknorris` that you can use fo
 Using this image, **you must read** the section "Working with containers" of the document "The Top 10 Docker commands" on Cyberlearn. You should:
 - run the image `heigvddai/chucknorris`,
 - run the image as background process,
-- run the image, which uses TCP port 80 and map it to another port, for example 8080 (you can then open a browser and connect to `localhost:8080` to see as Chuck Norris joke and refresh the page several times),
+- run the image, which uses TCP port 80 and map it to another port, for example 8080 (you can then open a browser and connect to `localhost:8080` to see a Chuck Norris joke and refresh the page several times),
 - open a shell in the running container,
 - list the running containers with `docker ps`,
 - stop the running container,
