@@ -180,8 +180,8 @@ Maven uses a configuration file called `pom.xml` to manage the project. It conta
     <version>1.0</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -198,7 +198,7 @@ Besides the standard template, there are only three important elements:
 - `<groupId>`: the groupId gives the package name. This is usually the name of the organization that created the project. The source code must follow this structure. In our case, the source code is in the directory `.../src/main/java/ch/heig/dai/lab/tools/`, which corresponds to the groupId `ch.heig.dai.lab.tools`. In the `Main.java` file you will see the package declaration `package ch.heig.dai.lab.tools;`.
 - `<artifactId>` and `<version`: together they define the name of the `.jar` file that will be generated. In our case, the `.jar` file will be named `demo-app-1.0.jar`.
 
-Other elements to check are `maven.compiler.source` and `maven.compiler.target`. Here we use Java 17 for the compiler and the generated `.jar` file.
+Other elements to check are `maven.compiler.source` and `maven.compiler.target`. Here we use Java 21 for the compiler and the generated `.jar` file.
 
 ### Compiling with Maven
 
@@ -278,7 +278,7 @@ Docker uses a file called `Dockerfile` to build the image. Create a `Dockerfile`
 
 ```dockerfile
 FROM alpine:latest
-RUN apk add --no-cache openjdk17
+RUN apk add --no-cache openjdk21
 WORKDIR /app
 COPY target/*.jar /app/app.jar
 CMD ["java", "-jar", "app.jar"]
@@ -299,4 +299,4 @@ Now try to run the image with the normal `docker run` command that you already k
 
 ### Using Docker Compose
 
-In a final step, we will use Docker Compose to run the application. Create a `docker-compose.yml` file with the image as the only service. Run it with `docker compose` to check that it works.
+In a final step, we will use Docker Compose to run the application. Create a `compose.yml` file with the image as the only service. Run it with `docker compose` to check that it works.
